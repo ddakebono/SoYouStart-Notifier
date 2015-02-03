@@ -41,7 +41,7 @@ public class Configuration {
         smtpUsername = cfg.getProperty("SMTPUsername", "change@me.now");
         smtpPassword = cfg.getProperty("SMTPPassword", "changeme");
         smtpAuthEnabled = Boolean.parseBoolean(cfg.getProperty("SMTPUseAuthentication", "true"));
-        watchedServersNotSplit = cfg.getProperty("WatchedServerID", "143sys1:bhs, 143sys2:bhs, 143sys3:bhs, serverid:zone");
+        watchedServersNotSplit = cfg.getProperty("WatchedServerID", "143casys1:bhs, 143casys2:bhs, 143casys3:bhs, serverid:zone");
         watchedServers = watchedServersNotSplit.split(",\\s?");
         if(!isInit){
             log.info("Creating new configuration file");
