@@ -24,7 +24,7 @@ import java.util.Map;
 import java.util.Properties;
 
 public class Notify {
-    public static String UPDATE_URL = "http://ws.ovh.com/dedicated/r2/ws.dispatcher/getAvailability2";
+    public static String UPDATE_URL = "https://ws.ovh.ca/dedicated/r2/ws.dispatcher/getAvailability2?callback=Request.JSONP.request_map.request_0";
     public static boolean murder = false;
     public static void main(String[] args){
         Logger log = LoggerFactory.getLogger(Notify.class);
